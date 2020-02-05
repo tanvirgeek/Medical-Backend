@@ -14,7 +14,7 @@
     $sql = "select * from users where Username = '$user_name'";
 
     $result = mysqli_query($con,$sql);
-    var_dump($result);
+    //var_dump($result);
     // checking if username exists or not
     if (mysqli_num_rows($result)>0){
         $status = "exists";
